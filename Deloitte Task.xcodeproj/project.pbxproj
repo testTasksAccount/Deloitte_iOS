@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84B3B561221EB40700DEF28E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B560221EB40700DEF28E /* AppDelegate.swift */; };
+		84B3B563221EB40700DEF28E /* SearchAlbumsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B562221EB40700DEF28E /* SearchAlbumsVC.swift */; };
+		84B3B566221EB40700DEF28E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B3B564221EB40700DEF28E /* Main.storyboard */; };
+		84B3B568221EB40800DEF28E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B3B567221EB40800DEF28E /* Assets.xcassets */; };
+		84B3B56B221EB40800DEF28E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B3B569221EB40800DEF28E /* LaunchScreen.storyboard */; };
+		84B3B576221EB40800DEF28E /* Deloitte_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B575221EB40800DEF28E /* Deloitte_TaskTests.swift */; };
+		84B3B584221EB63F00DEF28E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B583221EB63F00DEF28E /* NetworkService.swift */; };
+		84B3B589221EE51100DEF28E /* URLParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B588221EE51100DEF28E /* URLParsingError.swift */; };
+		84B3B591221EEC3600DEF28E /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B590221EEC3600DEF28E /* AlbumModel.swift */; };
+		84B3B593221EF02300DEF28E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B592221EF02300DEF28E /* Result.swift */; };
+		84B3B595221EF2D500DEF28E /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B594221EF2D500DEF28E /* Feed.swift */; };
+		84B3B59B221F0CC900DEF28E /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B59A221F0CC900DEF28E /* AlbumCell.swift */; };
+		84B3B59E221F298100DEF28E /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B59D221F298100DEF28E /* ImageCache.swift */; };
+		84B3B5A0221F29D600DEF28E /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B59F221F29D600DEF28E /* ImageManager.swift */; };
+		84B3B5A2221F886C00DEF28E /* ImageManagerOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B5A1221F886C00DEF28E /* ImageManagerOperation.swift */; };
+		84B3B5A7222001E100DEF28E /* AlbumDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B5A6222001E100DEF28E /* AlbumDetailsVC.swift */; };
+		84B3B5A822200E2800DEF28E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B583221EB63F00DEF28E /* NetworkService.swift */; };
+		84B3B5A922201C5C00DEF28E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B592221EF02300DEF28E /* Result.swift */; };
+		84B3B5AA22201C6100DEF28E /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B594221EF2D500DEF28E /* Feed.swift */; };
+		84B3B5AB22201C7E00DEF28E /* URLParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B588221EE51100DEF28E /* URLParsingError.swift */; };
+		84B3B5AC22201C8600DEF28E /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B590221EEC3600DEF28E /* AlbumModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84B3B572221EB40800DEF28E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84B3B555221EB40700DEF28E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84B3B55C221EB40700DEF28E;
+			remoteInfo = "Deloitte Task";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84B3B55D221EB40700DEF28E /* Deloitte Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Deloitte Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B3B560221EB40700DEF28E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84B3B562221EB40700DEF28E /* SearchAlbumsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAlbumsVC.swift; sourceTree = "<group>"; };
+		84B3B565221EB40700DEF28E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84B3B567221EB40800DEF28E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84B3B56A221EB40800DEF28E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84B3B56C221EB40800DEF28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B3B571221EB40800DEF28E /* Deloitte TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Deloitte TaskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84B3B575221EB40800DEF28E /* Deloitte_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deloitte_TaskTests.swift; sourceTree = "<group>"; };
+		84B3B577221EB40800DEF28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B3B583221EB63F00DEF28E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		84B3B588221EE51100DEF28E /* URLParsingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParsingError.swift; sourceTree = "<group>"; };
+		84B3B590221EEC3600DEF28E /* AlbumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		84B3B592221EF02300DEF28E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		84B3B594221EF2D500DEF28E /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		84B3B59A221F0CC900DEF28E /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		84B3B59D221F298100DEF28E /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		84B3B59F221F29D600DEF28E /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		84B3B5A1221F886C00DEF28E /* ImageManagerOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManagerOperation.swift; sourceTree = "<group>"; };
+		84B3B5A6222001E100DEF28E /* AlbumDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84B3B55A221EB40700DEF28E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B3B56E221EB40800DEF28E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84B3B554221EB40700DEF28E = {
+			isa = PBXGroup;
+			children = (
+				84B3B55F221EB40700DEF28E /* Deloitte Task */,
+				84B3B574221EB40800DEF28E /* Deloitte TaskTests */,
+				84B3B55E221EB40700DEF28E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84B3B55E221EB40700DEF28E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B55D221EB40700DEF28E /* Deloitte Task.app */,
+				84B3B571221EB40800DEF28E /* Deloitte TaskTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84B3B55F221EB40700DEF28E /* Deloitte Task */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B58C221EEAE100DEF28E /* Supporting Files */,
+				84B3B58A221EEAAE00DEF28E /* Resources */,
+				84B3B585221EE4E800DEF28E /* Source */,
+			);
+			path = "Deloitte Task";
+			sourceTree = "<group>";
+		};
+		84B3B574221EB40800DEF28E /* Deloitte TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B575221EB40800DEF28E /* Deloitte_TaskTests.swift */,
+				84B3B577221EB40800DEF28E /* Info.plist */,
+			);
+			path = "Deloitte TaskTests";
+			sourceTree = "<group>";
+		};
+		84B3B580221EB5D200DEF28E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B583221EB63F00DEF28E /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		84B3B585221EE4E800DEF28E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B59C221F296D00DEF28E /* ImageCache */,
+				84B3B58F221EEB2D00DEF28E /* Models */,
+				84B3B58E221EEB1C00DEF28E /* Sections */,
+				84B3B58D221EEB0200DEF28E /* AppDelegate */,
+				84B3B580221EB5D200DEF28E /* Networking */,
+				84B3B586221EE4EF00DEF28E /* Common */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		84B3B586221EE4EF00DEF28E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B587221EE4F700DEF28E /* Enums */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		84B3B587221EE4F700DEF28E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B588221EE51100DEF28E /* URLParsingError.swift */,
+				84B3B592221EF02300DEF28E /* Result.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		84B3B58A221EEAAE00DEF28E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B567221EB40800DEF28E /* Assets.xcassets */,
+				84B3B58B221EEAB800DEF28E /* Storuboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84B3B58B221EEAB800DEF28E /* Storuboards */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B564221EB40700DEF28E /* Main.storyboard */,
+				84B3B569221EB40800DEF28E /* LaunchScreen.storyboard */,
+			);
+			path = Storuboards;
+			sourceTree = "<group>";
+		};
+		84B3B58C221EEAE100DEF28E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B56C221EB40800DEF28E /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84B3B58D221EEB0200DEF28E /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B560221EB40700DEF28E /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		84B3B58E221EEB1C00DEF28E /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B5A5222001AA00DEF28E /* AlbumDetails */,
+				84B3B596221EF5AF00DEF28E /* SearchAlbums */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		84B3B58F221EEB2D00DEF28E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B590221EEC3600DEF28E /* AlbumModel.swift */,
+				84B3B594221EF2D500DEF28E /* Feed.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84B3B596221EF5AF00DEF28E /* SearchAlbums */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B599221F0C9E00DEF28E /* Views */,
+				84B3B562221EB40700DEF28E /* SearchAlbumsVC.swift */,
+			);
+			path = SearchAlbums;
+			sourceTree = "<group>";
+		};
+		84B3B599221F0C9E00DEF28E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B59A221F0CC900DEF28E /* AlbumCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84B3B59C221F296D00DEF28E /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B59D221F298100DEF28E /* ImageCache.swift */,
+				84B3B59F221F29D600DEF28E /* ImageManager.swift */,
+				84B3B5A1221F886C00DEF28E /* ImageManagerOperation.swift */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
+		84B3B5A5222001AA00DEF28E /* AlbumDetails */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B5A6222001E100DEF28E /* AlbumDetailsVC.swift */,
+			);
+			path = AlbumDetails;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84B3B55C221EB40700DEF28E /* Deloitte Task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B3B57A221EB40800DEF28E /* Build configuration list for PBXNativeTarget "Deloitte Task" */;
+			buildPhases = (
+				84B3B559221EB40700DEF28E /* Sources */,
+				84B3B55A221EB40700DEF28E /* Frameworks */,
+				84B3B55B221EB40700DEF28E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Deloitte Task";
+			productName = "Deloitte Task";
+			productReference = 84B3B55D221EB40700DEF28E /* Deloitte Task.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84B3B570221EB40800DEF28E /* Deloitte TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84B3B57D221EB40800DEF28E /* Build configuration list for PBXNativeTarget "Deloitte TaskTests" */;
+			buildPhases = (
+				84B3B56D221EB40800DEF28E /* Sources */,
+				84B3B56E221EB40800DEF28E /* Frameworks */,
+				84B3B56F221EB40800DEF28E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84B3B573221EB40800DEF28E /* PBXTargetDependency */,
+			);
+			name = "Deloitte TaskTests";
+			productName = "Deloitte TaskTests";
+			productReference = 84B3B571221EB40800DEF28E /* Deloitte TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84B3B555221EB40700DEF28E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Andrii Andreiev";
+				TargetAttributes = {
+					84B3B55C221EB40700DEF28E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					84B3B570221EB40800DEF28E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 84B3B55C221EB40700DEF28E;
+					};
+				};
+			};
+			buildConfigurationList = 84B3B558221EB40700DEF28E /* Build configuration list for PBXProject "Deloitte Task" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84B3B554221EB40700DEF28E;
+			productRefGroup = 84B3B55E221EB40700DEF28E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84B3B55C221EB40700DEF28E /* Deloitte Task */,
+				84B3B570221EB40800DEF28E /* Deloitte TaskTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84B3B55B221EB40700DEF28E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B3B56B221EB40800DEF28E /* LaunchScreen.storyboard in Resources */,
+				84B3B568221EB40800DEF28E /* Assets.xcassets in Resources */,
+				84B3B566221EB40700DEF28E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B3B56F221EB40800DEF28E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84B3B559221EB40700DEF28E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B3B593221EF02300DEF28E /* Result.swift in Sources */,
+				84B3B5A0221F29D600DEF28E /* ImageManager.swift in Sources */,
+				84B3B563221EB40700DEF28E /* SearchAlbumsVC.swift in Sources */,
+				84B3B5A7222001E100DEF28E /* AlbumDetailsVC.swift in Sources */,
+				84B3B589221EE51100DEF28E /* URLParsingError.swift in Sources */,
+				84B3B59E221F298100DEF28E /* ImageCache.swift in Sources */,
+				84B3B59B221F0CC900DEF28E /* AlbumCell.swift in Sources */,
+				84B3B595221EF2D500DEF28E /* Feed.swift in Sources */,
+				84B3B5A2221F886C00DEF28E /* ImageManagerOperation.swift in Sources */,
+				84B3B591221EEC3600DEF28E /* AlbumModel.swift in Sources */,
+				84B3B584221EB63F00DEF28E /* NetworkService.swift in Sources */,
+				84B3B561221EB40700DEF28E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84B3B56D221EB40800DEF28E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B3B5A922201C5C00DEF28E /* Result.swift in Sources */,
+				84B3B5AC22201C8600DEF28E /* AlbumModel.swift in Sources */,
+				84B3B5AB22201C7E00DEF28E /* URLParsingError.swift in Sources */,
+				84B3B5AA22201C6100DEF28E /* Feed.swift in Sources */,
+				84B3B5A822200E2800DEF28E /* NetworkService.swift in Sources */,
+				84B3B576221EB40800DEF28E /* Deloitte_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84B3B573221EB40800DEF28E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84B3B55C221EB40700DEF28E /* Deloitte Task */;
+			targetProxy = 84B3B572221EB40800DEF28E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84B3B564221EB40700DEF28E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B3B565221EB40700DEF28E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84B3B569221EB40800DEF28E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84B3B56A221EB40800DEF28E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84B3B578221EB40800DEF28E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Deloitte Task/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84B3B579221EB40800DEF28E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Deloitte Task/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84B3B57B221EB40800DEF28E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73YUQ5D2E9;
+				INFOPLIST_FILE = "Deloitte Task/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spellhall.app.Deloitte-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84B3B57C221EB40800DEF28E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73YUQ5D2E9;
+				INFOPLIST_FILE = "Deloitte Task/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spellhall.app.Deloitte-Task";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84B3B57E221EB40800DEF28E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73YUQ5D2E9;
+				INFOPLIST_FILE = "Deloitte Task/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spellhall.app.Deloitte-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deloitte Task.app/Deloitte Task";
+			};
+			name = Debug;
+		};
+		84B3B57F221EB40800DEF28E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 73YUQ5D2E9;
+				INFOPLIST_FILE = "Deloitte Task/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spellhall.app.Deloitte-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Deloitte Task.app/Deloitte Task";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84B3B558221EB40700DEF28E /* Build configuration list for PBXProject "Deloitte Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B3B578221EB40800DEF28E /* Debug */,
+				84B3B579221EB40800DEF28E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B3B57A221EB40800DEF28E /* Build configuration list for PBXNativeTarget "Deloitte Task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B3B57B221EB40800DEF28E /* Debug */,
+				84B3B57C221EB40800DEF28E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84B3B57D221EB40800DEF28E /* Build configuration list for PBXNativeTarget "Deloitte TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84B3B57E221EB40800DEF28E /* Debug */,
+				84B3B57F221EB40800DEF28E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84B3B555221EB40700DEF28E /* Project object */;
+}
